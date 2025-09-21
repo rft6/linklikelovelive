@@ -9,7 +9,7 @@
     <!-- Vue3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
-        .table {
+        #musiclist {
             margin-top: 10px;
         }
     </style>
@@ -24,53 +24,55 @@
     </nav>
     <div id="app" class="container">
 
-        <!-- 読み込み中 / エラー -->
-        <div v-if="loading" class="alert alert-info">読み込み中...</div>
-        <div v-if="error" class="alert alert-danger">{{ error }}</div>
+        <div id="musiclist">
+            <!-- 読み込み中 / エラー -->
+            <div v-if="loading" class="alert alert-info">読み込み中...</div>
+            <div v-if="error" class="alert alert-danger">{{ error }}</div>
 
-        <!-- テーブル -->
-        <table v-if="!loading && !error" class="table table-bordered table-striped">
-            <thead class="table-light ">
-                <tr>
-                    <th>#</th>
-                    <th>曲名</th>
-                    <th>Normal</th>
-                    <th>Hard</th>
-                    <th>Expert</th>
-                    <th>Master</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="(song, index) in songs" :key="song.id">
-                    <td>{{ index + 1 }}</td>
-                    <td>{{ song.name }}</td>
+            <!-- テーブル -->
+            <table v-if="!loading && !error" class="table table-bordered table-striped">
+                <thead class="table-light ">
+                    <tr>
+                        <th>#</th>
+                        <th>曲名</th>
+                        <th>Normal</th>
+                        <th>Hard</th>
+                        <th>Expert</th>
+                        <th>Master</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(song, index) in songs" :key="song.id">
+                        <td>{{ index + 1 }}</td>
+                        <td>{{ song.name }}</td>
 
-                    <!-- Normal列 -->
-                    <td>
-                        <a v-if="song.normal_mv" :href="song.normal_mv" target="_blank">{{ song.normal }}</a>
-                        <span v-else>{{ song.normal }}</span>
-                    </td>
+                        <!-- Normal列 -->
+                        <td>
+                            <a v-if="song.normal_mv" :href="song.normal_mv" target="_blank">{{ song.normal }}</a>
+                            <span v-else>{{ song.normal }}</span>
+                        </td>
 
-                    <!-- Hard列 -->
-                    <td>
-                        <a v-if="song.hard_mv" :href="song.hard_mv" target="_blank">{{ song.hard }}</a>
-                        <span v-else>{{ song.hard }}</span>
-                    </td>
+                        <!-- Hard列 -->
+                        <td>
+                            <a v-if="song.hard_mv" :href="song.hard_mv" target="_blank">{{ song.hard }}</a>
+                            <span v-else>{{ song.hard }}</span>
+                        </td>
 
-                    <!-- Expert列 -->
-                    <td>
-                        <a v-if="song.expert_mv" :href="song.expert_mv" target="_blank">{{ song.expert }}</a>
-                        <span v-else>{{ song.expert }}</span>
-                    </td>
+                        <!-- Expert列 -->
+                        <td>
+                            <a v-if="song.expert_mv" :href="song.expert_mv" target="_blank">{{ song.expert }}</a>
+                            <span v-else>{{ song.expert }}</span>
+                        </td>
 
-                    <!-- Master列 -->
-                    <td>
-                        <a v-if="song.master_mv" :href="song.master_mv" target="_blank">{{ song.master }}</a>
-                        <span v-else>{{ song.master }}</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        <!-- Master列 -->
+                        <td>
+                            <a v-if="song.master_mv" :href="song.master_mv" target="_blank">{{ song.master }}</a>
+                            <span v-else>{{ song.master }}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
