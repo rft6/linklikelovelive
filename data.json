@@ -66,8 +66,8 @@
         "hard": 18,
         "expert": 25,
         "master": 30,
-        "normal_mv": "",
-        "hard_mv": "",
+        "normal_mv": "https://www.youtube.com/watch?v=6USRs0QHKJw",
+        "hard_mv": "https://www.youtube.com/watch?v=-lb4i3yl8jI",
         "expert_mv": "",
         "master_mv": ""
     },
