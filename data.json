@@ -96,18 +96,6 @@
         "master_mv": ""
     },
     {
-        "id": 9,
-        "name": "Legato",
-        "normal": 12,
-        "hard": 20,
-        "expert": 26,
-        "master": 28,
-        "normal_mv": "",
-        "hard_mv": "",
-        "expert_mv": "",
-        "master_mv": ""
-    },
-    {
         "id": 10,
         "name": "Preserved Roses",
         "normal": 12,
