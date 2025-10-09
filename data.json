@@ -6,8 +6,8 @@
         "hard": 18,
         "expert": 27,
         "master": 29,
-        "normal_mv": "",
-        "hard_mv": "",
+        "normal_mv": "https://www.youtube.com/watch?v=tZfcLArrv7I",
+        "hard_mv": "https://www.youtube.com/watch?v=IJhn3Ipc4Kk",
         "expert_mv": "",
         "master_mv": ""
     },
@@ -56,7 +56,7 @@
         "master": 28,
         "normal_mv": "https://www.youtube.com/watch?v=Z-fNxKJMmdo",
         "hard_mv": "https://www.youtube.com/watch?v=AzrRWXHc6R8",
-        "expert_mv": "",
+        "expert_mv": "https://www.youtube.com/watch?v=wB7Aj0DhPiI",
         "master_mv": ""
     },
     {
@@ -68,7 +68,7 @@
         "master": 30,
         "normal_mv": "https://www.youtube.com/watch?v=6USRs0QHKJw",
         "hard_mv": "https://www.youtube.com/watch?v=-lb4i3yl8jI",
-        "expert_mv": "",
+        "expert_mv": "https://www.youtube.com/watch?v=MKGVxDAi66E",
         "master_mv": ""
     },
     {
@@ -872,7 +872,7 @@
         "master": 27,
         "normal_mv": "",
         "hard_mv": "",
-        "expert_mv": "",
+        "expert_mv": "https://www.youtube.com/watch?v=YyFVS87Jtkg",
         "master_mv": ""
     },
     {
@@ -1004,7 +1004,7 @@
         "master": 28,
         "normal_mv": "https://www.youtube.com/watch?v=d0MgjqRZJng",
         "hard_mv": "https://www.youtube.com/watch?v=6f4FEUA-4M0",
-        "expert_mv": "",
+        "expert_mv": "https://www.youtube.com/watch?v=q8m2OYAgPbE",
         "master_mv": ""
     },
     {
