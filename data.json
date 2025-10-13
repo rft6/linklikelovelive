@@ -78,9 +78,9 @@
         "hard": 19,
         "expert": 26,
         "master": 29,
-        "normal_mv": "",
-        "hard_mv": "",
-        "expert_mv": "",
+        "normal_mv": "https://www.youtube.com/watch?v=5iuGACNn5zU",
+        "hard_mv": "https://www.youtube.com/watch?v=ci8I27vhKD4",
+        "expert_mv": "https://www.youtube.com/watch?v=bEo8Ua93Fqo",
         "master_mv": ""
     },
     {
@@ -150,8 +150,8 @@
         "hard": 19,
         "expert": 26,
         "master": 29,
-        "normal_mv": "",
-        "hard_mv": "",
+        "normal_mv": "https://www.youtube.com/watch?v=3D1WlwnviI0",
+        "hard_mv": "https://www.youtube.com/watch?v=FtyKy_CirRo",
         "expert_mv": "",
         "master_mv": ""
     },
