@@ -96,7 +96,7 @@
         "master_mv": ""
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "Preserved Roses",
         "normal": 12,
         "hard": 21,
@@ -108,7 +108,7 @@
         "master_mv": ""
     },
     {
-        "id": 11,
+        "id": 10,
         "name": "TOKIMEKI Runners",
         "normal": 13,
         "hard": 19,
@@ -120,11 +120,23 @@
         "master_mv": ""
     },
     {
-        "id": 12,
+        "id": 11,
         "name": "君のこころは輝いてるかい？",
         "normal": 12,
         "hard": 19,
         "expert": 25,
+        "master": 29,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 12,
+        "name": "千変万華 (104期Ver.)",
+        "normal": 14,
+        "hard": 19,
+        "expert": 24,
         "master": 29,
         "normal_mv": "",
         "hard_mv": "",
@@ -697,6 +709,18 @@
     },
     {
         "id": 60,
+        "name": "KNOT (104期Ver.)",
+        "normal": 15,
+        "hard": 21,
+        "expert": 26,
+        "master": 29,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 61,
         "name": "以心☆電信",
         "normal": 14,
         "hard": 18,
@@ -708,7 +732,7 @@
         "master_mv": ""
     },
     {
-        "id": 61,
+        "id": 62,
         "name": "DEEPNESS (Rec Ver.)",
         "normal": 12,
         "hard": 19,
@@ -720,7 +744,7 @@
         "master_mv": ""
     },
     {
-        "id": 62,
+        "id": 63,
         "name": "希望的プリズム (104期Ver.)",
         "normal": 10,
         "hard": 18,
@@ -732,7 +756,7 @@
         "master_mv": ""
     },
     {
-        "id": 63,
+        "id": 64,
         "name": "Take It Over (104期Ver.)",
         "normal": 14,
         "hard": 19,
@@ -744,7 +768,7 @@
         "master_mv": ""
     },
     {
-        "id": 64,
+        "id": 65,
         "name": "AWOKE (104期Ver.)",
         "normal": 13,
         "hard": 17,
@@ -756,7 +780,7 @@
         "master_mv": ""
     },
     {
-        "id": 65,
+        "id": 66,
         "name": "水彩世界 (104期Ver.)",
         "normal": 11,
         "hard": 16,
@@ -768,7 +792,7 @@
         "master_mv": ""
     },
     {
-        "id": 66,
+        "id": 67,
         "name": "Daydream Warrior",
         "normal": 12,
         "hard": 18,
@@ -780,7 +804,7 @@
         "master_mv": ""
     },
     {
-        "id": 67,
+        "id": 68,
         "name": "Edelied",
         "normal": 13,
         "hard": 18,
@@ -792,7 +816,7 @@
         "master_mv": ""
     },
     {
-        "id": 68,
+        "id": 69,
         "name": "アンペア",
         "normal": 15,
         "hard": 19,
@@ -804,7 +828,7 @@
         "master_mv": ""
     },
     {
-        "id": 69,
+        "id": 70,
         "name": "Retrofuture",
         "normal": 11,
         "hard": 18,
@@ -816,7 +840,7 @@
         "master_mv": ""
     },
     {
-        "id": 70,
+        "id": 71,
         "name": "be proud",
         "normal": 12,
         "hard": 16,
@@ -828,7 +852,7 @@
         "master_mv": ""
     },
     {
-        "id": 71,
+        "id": 72,
         "name": "アイマイメーデー",
         "normal": 12,
         "hard": 19,
@@ -840,7 +864,7 @@
         "master_mv": ""
     },
     {
-        "id": 72,
+        "id": 73,
         "name": "十六夜セレーネ",
         "normal": 13,
         "hard": 19,
@@ -852,7 +876,7 @@
         "master_mv": ""
     },
     {
-        "id": 73,
+        "id": 74,
         "name": "アイドゥーミー！",
         "normal": 14,
         "hard": 21,
@@ -864,7 +888,7 @@
         "master_mv": ""
     },
     {
-        "id": 74,
+        "id": 75,
         "name": "天地黎明",
         "normal": 11,
         "hard": 17,
@@ -876,7 +900,7 @@
         "master_mv": ""
     },
     {
-        "id": 75,
+        "id": 76,
         "name": "フルーツパンチ",
         "normal": 13,
         "hard": 18,
@@ -888,7 +912,7 @@
         "master_mv": ""
     },
     {
-        "id": 76,
+        "id": 77,
         "name": "太陽であれ！",
         "normal": 13,
         "hard": 20,
@@ -900,7 +924,7 @@
         "master_mv": ""
     },
     {
-        "id": 77,
+        "id": 78,
         "name": "とーひょー☆スター！",
         "normal": 11,
         "hard": 17,
@@ -912,7 +936,7 @@
         "master_mv": ""
     },
     {
-        "id": 78,
+        "id": 79,
         "name": "Very! Very! COCO夏っ",
         "normal": 13,
         "hard": 19,
@@ -924,7 +948,7 @@
         "master_mv": ""
     },
     {
-        "id": 79,
+        "id": 80,
         "name": "My Lucky Clover",
         "normal": 11,
         "hard": 17,
@@ -936,7 +960,7 @@
         "master_mv": ""
     },
     {
-        "id": 80,
+        "id": 81,
         "name": "diamondz",
         "normal": 11,
         "hard": 18,
@@ -948,7 +972,7 @@
         "master_mv": ""
     },
     {
-        "id": 81,
+        "id": 82,
         "name": "可惜夜花火",
         "normal": 13,
         "hard": 20,
@@ -960,7 +984,7 @@
         "master_mv": ""
     },
     {
-        "id": 82,
+        "id": 83,
         "name": "ブルウモーメント",
         "normal": 10,
         "hard": 16,
@@ -972,7 +996,7 @@
         "master_mv": "https://www.youtube.com/watch?v=cw_LUvtyMXg"
     },
     {
-        "id": 83,
+        "id": 84,
         "name": "フュージョンクラスト",
         "normal": 11,
         "hard": 17,
@@ -984,7 +1008,7 @@
         "master_mv": "https://www.youtube.com/watch?v=HbPCznvXscA"
     },
     {
-        "id": 84,
+        "id": 85,
         "name": "ニャオシグナル",
         "normal": 15,
         "hard": 20,
@@ -996,7 +1020,7 @@
         "master_mv": ""
     },
     {
-        "id": 85,
+        "id": 86,
         "name": "ハートにQ",
         "normal": 12,
         "hard": 18,
@@ -1008,7 +1032,7 @@
         "master_mv": ""
     },
     {
-        "id": 86,
+        "id": 87,
         "name": "片翼のトリバガ",
         "normal": 13,
         "hard": 19,
@@ -1020,7 +1044,7 @@
         "master_mv": ""
     },
     {
-        "id": 87,
+        "id": 88,
         "name": "ドライブ・スペード・クレイジー",
         "normal": 11,
         "hard": 20,
@@ -1032,7 +1056,7 @@
         "master_mv": ""
     },
     {
-        "id": 88,
+        "id": 89,
         "name": "一生に夢が咲くように",
         "normal": 10,
         "hard": 16,
@@ -1044,7 +1068,19 @@
         "master_mv": ""
     },
     {
-        "id": 89,
+        "id": 90,
+        "name": "乙女詞華集",
+        "normal": 10,
+        "hard": 16,
+        "expert": 24,
+        "master": 29,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 91,
         "name": "虹色Passions!",
         "normal": 14,
         "hard": 21,
@@ -1056,7 +1092,7 @@
         "master_mv": ""
     },
     {
-        "id": 90,
+        "id": 92,
         "name": "愛♡スクリ～ム！",
         "normal": 11,
         "hard": 17,
@@ -1068,7 +1104,7 @@
         "master_mv": ""
     },
     {
-        "id": 91,
+        "id": 93,
         "name": "START!! True dreams",
         "normal": 15,
         "hard": 20,
@@ -1080,7 +1116,7 @@
         "master_mv": ""
     },
     {
-        "id": 92,
+        "id": 94,
         "name": "Shocking Party",
         "normal": 14,
         "hard": 19,
@@ -1088,6 +1124,18 @@
         "master": 29,
         "normal_mv": "https://www.youtube.com/watch?v=yoUPwnN4Ngk",
         "hard_mv": "https://www.youtube.com/watch?v=ogzwxzuREAo",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 95,
+        "name": "僕らは今のなかで",
+        "normal": 11,
+        "hard": 19,
+        "expert": 26,
+        "master": 30,
+        "normal_mv": "",
+        "hard_mv": "",
         "expert_mv": "",
         "master_mv": ""
     }
