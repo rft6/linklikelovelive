@@ -1081,6 +1081,18 @@
     },
     {
         "id": 91,
+        "name": "バイタルサイン",
+        "normal": 11,
+        "hard": 17,
+        "expert": 28,
+        "master": 32,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 92,
         "name": "虹色Passions!",
         "normal": 14,
         "hard": 21,
@@ -1092,7 +1104,7 @@
         "master_mv": ""
     },
     {
-        "id": 92,
+        "id": 93,
         "name": "愛♡スクリ～ム！",
         "normal": 11,
         "hard": 17,
@@ -1104,7 +1116,7 @@
         "master_mv": ""
     },
     {
-        "id": 93,
+        "id": 94,
         "name": "START!! True dreams",
         "normal": 15,
         "hard": 20,
@@ -1116,7 +1128,7 @@
         "master_mv": ""
     },
     {
-        "id": 94,
+        "id": 95,
         "name": "Shocking Party",
         "normal": 14,
         "hard": 19,
@@ -1128,7 +1140,7 @@
         "master_mv": ""
     },
     {
-        "id": 95,
+        "id": 96,
         "name": "僕らは今のなかで",
         "normal": 11,
         "hard": 19,
