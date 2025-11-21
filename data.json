@@ -120,6 +120,18 @@
         "master_mv": ""
     },
     {
+        "id": 10,
+        "name": "ダンスロボットダンス",
+        "normal": 14,
+        "hard": 20,
+        "expert": 26,
+        "master": 30,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
         "id": 11,
         "name": "TOKIMEKI Runners",
         "normal": 13,
@@ -696,6 +708,18 @@
         "master_mv": ""
     },
     {
+        "id": 58,
+        "name": "飴色",
+        "normal": 10,
+        "hard": 18,
+        "expert": 24,
+        "master": 28,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
         "id": 59,
         "name": "深愛",
         "normal": 12,
@@ -1233,6 +1257,42 @@
         "normal_mv": "https://www.youtube.com/watch?v=QXKWk3eO-z8",
         "hard_mv": "https://www.youtube.com/watch?v=APELSs7dLGY",
         "expert_mv": "https://www.youtube.com/watch?v=6B4AkBj-tEc",
+        "master_mv": ""
+    },
+    {
+        "id": 104,
+        "name": "シアター生き様",
+        "normal": 13,
+        "hard": 19,
+        "expert": 26,
+        "master": 28,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 104,
+        "name": "IcHiGo milK love",
+        "normal": 11,
+        "hard": 18,
+        "expert": 25,
+        "master": 30,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
+        "master_mv": ""
+    },
+    {
+        "id": 104,
+        "name": "Nεw Black",
+        "normal": 12,
+        "hard": 19,
+        "expert": 26,
+        "master": 30,
+        "normal_mv": "",
+        "hard_mv": "",
+        "expert_mv": "",
         "master_mv": ""
     },
     {
