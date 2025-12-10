@@ -444,6 +444,18 @@
     "master_mv": ""
   },
   {
+    "id": 37,
+    "name": "CHANGE!!!!",
+    "normal": 10,
+    "hard": 18,
+    "expert": 25,
+    "master": 28,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
     "id": 38,
     "name": "僕らのLIVE 君とのLIFE",
     "normal": 12,
@@ -738,6 +750,18 @@
     "hard": 18,
     "expert": 24,
     "master": 28,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 62,
+    "name": "青とシャボン",
+    "normal": 11,
+    "hard": 17,
+    "expert": 22,
+    "master": 26,
     "normal_mv": "",
     "hard_mv": "",
     "expert_mv": "",
@@ -1334,6 +1358,18 @@
   {
     "id": 112,
     "name": "チャーミングな花束を！",
+    "normal": 13,
+    "hard": 17,
+    "expert": 26,
+    "master": 29,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 112,
+    "name": "Hip, hip, hooray!",
     "normal": 13,
     "hard": 17,
     "expert": 26,
