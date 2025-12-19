@@ -630,10 +630,10 @@
     "hard": 17,
     "expert": 25,
     "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
-    "master_mv": ""
+    "normal_mv": "https://www.youtube.com/watch?v=QTYXi4o563k",
+    "hard_mv": "https://www.youtube.com/watch?v=JGXR3-MZ7yA",
+    "expert_mv": "https://www.youtube.com/watch?v=c8YGcOqLghU",
+    "master_mv": "https://www.youtube.com/watch?v=3HVhXHr7A80"
   },
   {
     "id": 54,
