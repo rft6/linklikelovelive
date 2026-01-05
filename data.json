@@ -1465,6 +1465,54 @@
   },
   {
     "id": 123,
+    "name": "もういちど ルミナス",
+    "normal": 11,
+    "hard": 17,
+    "expert": 25,
+    "master": 27,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 124,
+    "name": "壱雫空",
+    "normal": 15,
+    "hard": 19,
+    "expert": 28,
+    "master": 32,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 125,
+    "name": "キミがいなくちゃっ!",
+    "normal": 12,
+    "hard": 17,
+    "expert": 24,
+    "master": 28,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 126,
+    "name": "FIRE BIRD",
+    "normal": 14,
+    "hard": 18,
+    "expert": 27,
+    "master": 32,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 127,
     "name": "虹色Passions!",
     "normal": 14,
     "hard": 21,
@@ -1476,7 +1524,7 @@
     "master_mv": ""
   },
   {
-    "id": 124,
+    "id": 128,
     "name": "愛♡スクリ～ム！",
     "normal": 11,
     "hard": 17,
@@ -1488,7 +1536,7 @@
     "master_mv": ""
   },
   {
-    "id": 125,
+    "id": 129,
     "name": "START!! True dreams",
     "normal": 15,
     "hard": 20,
@@ -1500,7 +1548,7 @@
     "master_mv": ""
   },
   {
-    "id": 126,
+    "id": 130,
     "name": "Shocking Party",
     "normal": 14,
     "hard": 19,
@@ -1512,7 +1560,7 @@
     "master_mv": ""
   },
   {
-    "id": 127,
+    "id": 131,
     "name": "僕らは今のなかで",
     "normal": 11,
     "hard": 19,
