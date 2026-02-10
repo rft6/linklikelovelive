@@ -122,21 +122,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(song, index) in songs" :key="song.id">
+                    <tr v-for="(item, index) in songs" :key="item.key">
                         <td>{{ index + 1 }}</td>
-                        <td>{{ song.name }}</td>
-
-                        <!-- 選択された難易度ラベル -->
-                        <td>{{ song._chosenLabel }}</td>
-
-                        <!-- 選択された難易度の数値（存在する場合は MV へリンク） -->
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.difficulty }}</td>
                         <td>
-                            <a v-if="song._chosenMv" :href="song._chosenMv" target="_blank">{{ song._chosenValue }}</a>
-                            <span v-else>{{ song._chosenValue }}</span>
+                            <a v-if="item.mv" :href="item.mv" target="_blank">{{ item.level }}</a>
+                            <span v-else>{{ item.level }}</span>
                         </td>
-
-                        <!-- レート -->
-                        <td>{{ song._rate }}</td>
+                        <td>{{ item.rate }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -190,39 +184,92 @@
                             return a.id - b.id
                         })
 
-                        // 上位30件に制限し、選ばれた難易度ラベル・値・MV・レートを計算してから表示
-                        const top30 = normalized.slice(0, 30).map(song => {
-                            let label = 'NORMAL'
-                            let value = song._n
-                            let mv = song.normal_mv || ''
-
-                            if (song._m === song._max) {
-                                label = 'MASTER'
-                                value = song._m
-                                mv = song.master_mv || ''
-                            } else if (song._e === song._max) {
-                                label = 'EXPERT'
-                                value = song._e
-                                mv = song.expert_mv || ''
-                            } else if (song._h === song._max) {
-                                label = 'HARD'
-                                value = song._h
-                                mv = song.hard_mv || ''
+                        // 全曲について各難易度ごとに行を展開
+                        const allSongs = []
+                        normalized.forEach(song => {
+                            // MASTER
+                            if (song._m > 0) {
+                                allSongs.push({
+                                    key: `${song.id}-master`,
+                                    id: song.id,
+                                    name: song.name,
+                                    difficulty: 'MASTER',
+                                    level: song._m,
+                                    rate: (song._m || 0) * 10 + 25,
+                                    mv: song.master_mv || ''
+                                })
                             }
-
-                            const rate = (Number(value) || 0) * 10 + 25
-
-                            return Object.assign({}, song, {
-                                _chosenLabel: label,
-                                _chosenValue: value,
-                                _chosenMv: mv,
-                                _rate: rate
-                            })
+                            // EXPERT
+                            if (song._e > 0) {
+                                allSongs.push({
+                                    key: `${song.id}-expert`,
+                                    id: song.id,
+                                    name: song.name,
+                                    difficulty: 'EXPERT',
+                                    level: song._e,
+                                    rate: (song._e || 0) * 10 + 25,
+                                    mv: song.expert_mv || ''
+                                })
+                            }
+                            // HARD
+                            if (song._h > 0) {
+                                allSongs.push({
+                                    key: `${song.id}-hard`,
+                                    id: song.id,
+                                    name: song.name,
+                                    difficulty: 'HARD',
+                                    level: song._h,
+                                    rate: (song._h || 0) * 10 + 25,
+                                    mv: song.hard_mv || ''
+                                })
+                            }
+                            // NORMAL
+                            if (song._n > 0) {
+                                allSongs.push({
+                                    key: `${song.id}-normal`,
+                                    id: song.id,
+                                    name: song.name,
+                                    difficulty: 'NORMAL',
+                                    level: song._n,
+                                    rate: (song._n || 0) * 10 + 25,
+                                    mv: song.normal_mv || ''
+                                })
+                            }
                         })
 
-                        this.songs = top30
-                        // 合計を計算して表示用にセット
-                        this.totalRate = top30.reduce((acc, s) => acc + (Number(s._rate) || 0), 0)
+                        // ソート処理
+                        const difficultyPriority = {
+                            'MASTER': 3,
+                            'EXPERT': 2,
+                            'HARD': 1,
+                            'NORMAL': 0
+                        }
+                        allSongs.sort((a, b) => {
+                            // レベルの降順
+                            if (a.level !== b.level) {
+                                return b.level - a.level
+                            }
+                            // 難易度が同等の場合は優先度で降順
+                            if (difficultyPriority[a.difficulty] !== difficultyPriority[b.difficulty]) {
+                                return difficultyPriority[b.difficulty] - difficultyPriority[a.difficulty]
+                            }
+                            // レベルと難易度が同等の場合は ID で昇順
+                            return a.id - b.id
+                        })
+
+                        // TOP30で理論値を計算
+                        const top30 = normalized.slice(0, 30)
+                        this.totalRate = top30.reduce((acc, s) => {
+                            const rate_n = (s._n || 0) * 10 + 25
+                            const rate_h = (s._h || 0) * 10 + 25
+                            const rate_e = (s._e || 0) * 10 + 25
+                            const rate_m = (s._m || 0) * 10 + 25
+                            const maxRate = Math.max(rate_n, rate_h, rate_e, rate_m)
+                            return acc + maxRate
+                        }, 0)
+
+                        // 全曲を表示
+                        this.songs = allSongs
                     })
                     .catch(err => {
                         this.error = "データ取得失敗: " + err.message
