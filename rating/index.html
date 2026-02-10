@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>スクショウ譜面一覧</title>
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vue3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        #musiclist {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body class=>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">スクショウ譜面一覧</a>
+        </div>
+    </nav>
+    <div id="app" class="container">
+
+        <div id="musiclist">
+            <!-- 読み込み中 / エラー -->
+            <div v-if="loading" class="alert alert-info">読み込み中...</div>
+            <div v-if="error" class="alert alert-danger">{{ error }}</div>
+
+            <!-- レート理論値（カード表示） -->
+            <div v-if="!loading && !error" class="mb-3">
+                <div class="card text-bg-light">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <div>
+                            <h5 class="card-title mb-0">レート理論値</h5>
+                            <div class="text-muted small">Top30 の合計レート</div>
+                        </div>
+                        <div class="fs-3 fw-bold">{{ totalRate }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- テーブル -->
+            <table v-if="!loading && !error" class="table table-bordered table-striped">
+                <thead class="table-light ">
+                    <tr>
+                        <th>#</th>
+                        <th>曲名</th>
+                        <th>難易度</th>
+                        <th>レベル</th>
+                        <th>レート</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(song, index) in songs" :key="song.id">
+                        <td>{{ index + 1 }}</td>
+                        <td>{{ song.name }}</td>
+
+                        <!-- 選択された難易度ラベル -->
+                        <td>{{ song._chosenLabel }}</td>
+
+                        <!-- 選択された難易度の数値（存在する場合は MV へリンク） -->
+                        <td>
+                            <a v-if="song._chosenMv" :href="song._chosenMv" target="_blank">{{ song._chosenValue }}</a>
+                            <span v-else>{{ song._chosenValue }}</span>
+                        </td>
+
+                        <!-- レート -->
+                        <td>{{ song._rate }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    title: "スクショウ譜面一覧",
+                    songs: [],
+                    loading: true,
+                    error: null,
+                    totalRate: 0
+                }
+            },
+            mounted() {
+                // data.json は1段上のディレクトリにあるので ../data.json を参照
+                const url = "../data.json"
+
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) throw new Error("HTTPエラー: " + response.status)
+                        return response.json()
+                    })
+                    .then(data => {
+                        // 各曲について normal/hard/expert/master の最大値を計算し、
+                        // 最大値で降順ソート。
+                        // 同率のときは master>expert>hard>normal の優先で比較し、
+                        // それでも同率なら id の昇順。
+                        const normalized = data.map(song => {
+                            const n = Number(song.normal) || 0
+                            const h = Number(song.hard) || 0
+                            const e = Number(song.expert) || 0
+                            const m = Number(song.master) || 0
+                            const maxRating = Math.max(n, h, e, m)
+                            return Object.assign({}, song, { _n: n, _h: h, _e: e, _m: m, _max: maxRating })
+                        })
+
+                        normalized.sort((a, b) => {
+                            if (b._max !== a._max) return b._max - a._max
+
+                            if (b._m !== a._m) return b._m - a._m
+                            if (b._e !== a._e) return b._e - a._e
+                            if (b._h !== a._h) return b._h - a._h
+                            if (b._n !== a._n) return b._n - a._n
+
+                            return a.id - b.id
+                        })
+
+                        // 上位30件に制限し、選ばれた難易度ラベル・値・MV・レートを計算してから表示
+                        const top30 = normalized.slice(0, 30).map(song => {
+                            let label = 'NORMAL'
+                            let value = song._n
+                            let mv = song.normal_mv || ''
+
+                            if (song._m === song._max) {
+                                label = 'MASTER'
+                                value = song._m
+                                mv = song.master_mv || ''
+                            } else if (song._e === song._max) {
+                                label = 'EXPERT'
+                                value = song._e
+                                mv = song.expert_mv || ''
+                            } else if (song._h === song._max) {
+                                label = 'HARD'
+                                value = song._h
+                                mv = song.hard_mv || ''
+                            }
+
+                            const rate = (Number(value) || 0) * 10 + 25
+
+                            return Object.assign({}, song, {
+                                _chosenLabel: label,
+                                _chosenValue: value,
+                                _chosenMv: mv,
+                                _rate: rate
+                            })
+                        })
+
+                        this.songs = top30
+                        // 合計を計算して表示用にセット
+                        this.totalRate = top30.reduce((acc, s) => acc + (Number(s._rate) || 0), 0)
+                    })
+                    .catch(err => {
+                        this.error = "データ取得失敗: " + err.message
+                    })
+                    .finally(() => {
+                        this.loading = false
+                    })
+            }
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
