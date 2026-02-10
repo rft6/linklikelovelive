@@ -913,6 +913,18 @@
   },
   {
     "id": 77,
+    "name": "祝福",
+    "normal": 13,
+    "hard": 20,
+    "expert": 27,
+    "master": 30,
+    "normal_mv": "",
+    "hard_mv": "",
+    "expert_mv": "",
+    "master_mv": ""
+  },
+  {
+    "id": 78,
     "name": "On your mark (104期Ver.)",
     "normal": 15,
     "hard": 21,
@@ -924,24 +936,12 @@
     "master_mv": ""
   },
   {
-    "id": 78,
-    "name": "威風堂々",
-    "normal": 12,
-    "hard": 17,
-    "expert": 26,
-    "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
-    "master_mv": ""
-  },
-  {
     "id": 79,
-    "name": "祝福",
-    "normal": 13,
-    "hard": 20,
+    "name": "ココン東西 (104期Ver.)",
+    "normal": 14,
+    "hard": 18,
     "expert": 27,
-    "master": 30,
+    "master": 32,
     "normal_mv": "",
     "hard_mv": "",
     "expert_mv": "",
