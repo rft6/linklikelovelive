@@ -450,9 +450,9 @@
     "hard": 16,
     "expert": 23,
     "master": 27,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=uA6HOa8U1oA",
+    "hard_mv": "https://www.youtube.com/watch?v=n-rnWI148XY",
+    "expert_mv": "https://www.youtube.com/watch?v=o4hnQxJ9kJU",
     "master_mv": ""
   },
   {
@@ -582,8 +582,8 @@
     "hard": 21,
     "expert": 28,
     "master": 34,
-    "normal_mv": "",
-    "hard_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=KWBU6iFDCgo",
+    "hard_mv": "https://www.youtube.com/watch?v=FNkDqT-pvIk",
     "expert_mv": "",
     "master_mv": ""
   },
@@ -990,8 +990,8 @@
     "hard": 18,
     "expert": 27,
     "master": 32,
-    "normal_mv": "",
-    "hard_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=HMFfvL1jy9A",
+    "hard_mv": "https://www.youtube.com/watch?v=1zjtXQQ4RTs",
     "expert_mv": "",
     "master_mv": ""
   },
@@ -1002,9 +1002,9 @@
     "hard": 19,
     "expert": 26,
     "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=FyJeq8C-wTM",
+    "hard_mv": "https://www.youtube.com/watch?v=HlPx44XBA3o",
+    "expert_mv": "https://www.youtube.com/watch?v=7wQJ-LVJCYw",
     "master_mv": ""
   },
   {
@@ -1021,14 +1021,14 @@
   },
   {
     "id": 86,
-    "name": "以心☆電信",
+    "name": "以心☆電信 (104期Ver.)",
     "normal": 14,
     "hard": 18,
     "expert": 26,
     "master": 30,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=7B7PwsmzURU",
+    "hard_mv": "https://www.youtube.com/watch?v=LOMfAtLZPn8",
+    "expert_mv": "https://www.youtube.com/watch?v=tErL7iW_mt4",
     "master_mv": ""
   },
   {
@@ -1050,9 +1050,9 @@
     "hard": 18,
     "expert": 24,
     "master": 27,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=FbhAxzAoZUc",
+    "hard_mv": "https://www.youtube.com/watch?v=s3UrqAWCdgQ",
+    "expert_mv": "https://www.youtube.com/watch?v=r4jgD3CSpuY",
     "master_mv": "https://www.youtube.com/watch?v=vEuH1ilIfyU"
   },
   {
@@ -1062,8 +1062,8 @@
     "hard": 18,
     "expert": 27,
     "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=wELgxA1rygk",
+    "hard_mv": "https://www.youtube.com/watch?v=zce71ygo0Ko",
     "expert_mv": "",
     "master_mv": ""
   },
