@@ -154,7 +154,7 @@
                 // data.json は1段上のディレクトリにあるので ../data.json を参照
                 const url = "../data.json"
 
-                fetch(url)
+                fetch(url, { cache: 'no-store' })
                     .then(response => {
                         if (!response.ok) throw new Error("HTTPエラー: " + response.status)
                         return response.json()
