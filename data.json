@@ -882,9 +882,9 @@
     "hard": 17,
     "expert": 25,
     "master": 28,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=IM_Ccrf_hss",
+    "hard_mv": "https://www.youtube.com/watch?v=quDbBNialNM",
+    "expert_mv": "https://www.youtube.com/watch?v=bu1LSg8do6s",
     "master_mv": ""
   },
   {
@@ -1014,9 +1014,9 @@
     "hard": 21,
     "expert": 26,
     "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=tCc87KrtBrE",
+    "hard_mv": "https://www.youtube.com/watch?v=kmsPJpOfPuA",
+    "expert_mv": "https://www.youtube.com/watch?v=Zc6DuOEqwNg",
     "master_mv": ""
   },
   {
@@ -1033,14 +1033,14 @@
   },
   {
     "id": 87,
-    "name": "DEEPNESS (Rec Ver.)",
+    "name": "DEEPNESS (ReC Ver.)",
     "normal": 12,
     "hard": 19,
     "expert": 27,
     "master": 32,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=ny-kEwyGkw4",
+    "hard_mv": "https://www.youtube.com/watch?v=e-2dUtzI2l8",
+    "expert_mv": "https://www.youtube.com/watch?v=xdDRXKiqQ2Y",
     "master_mv": ""
   },
   {
@@ -1074,9 +1074,9 @@
     "hard": 19,
     "expert": 26,
     "master": 29,
-    "normal_mv": "",
-    "hard_mv": "",
-    "expert_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=CUYN1tpW-_w",
+    "hard_mv": "https://www.youtube.com/watch?v=LGocJvtjTrY",
+    "expert_mv": "https://www.youtube.com/watch?v=-HHeJq-i0QY",
     "master_mv": ""
   },
   {
@@ -1086,8 +1086,8 @@
     "hard": 17,
     "expert": 25,
     "master": 30,
-    "normal_mv": "",
-    "hard_mv": "",
+    "normal_mv": "https://www.youtube.com/watch?v=cqc7ID7TLBg",
+    "hard_mv": "https://www.youtube.com/watch?v=idzuH7Vv0GQ",
     "expert_mv": "",
     "master_mv": ""
   },
